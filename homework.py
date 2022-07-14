@@ -11,8 +11,8 @@ def output():
                 print ("Ok.Bye Enjoy Your Activity")
                 break
         elif user_output[0].lower()== "f":
-             minn= int(input("What is your budgets minimum?: "))/100
-             maxx =int(input("What is the maximum of your budget?: "))/100
+             minn= input("What is your budgets minimum?: ")
+             maxx =input("What is the maximum of your budget?: ")
              what_kind= input("What kind of activity would you like to try?: \n education \n recreational \n social \n diy  \n cooking  \n music \n busywork \n Type your choice: ")
              if what_kind[0].lower() == "d":
                 kind="diy"
@@ -38,7 +38,7 @@ def output():
              print_blue(f"Your random activity is: {data['activity']}")
              print_red(data['type'])
              print_yellow(f"This activity is ment for :{data['participants']} people to enjoy!")
-             print_green(f"The estimated cost is: ${data['price']*100}")
+             print_green(f"The estimated cost is: ${data['price']}")
 
         else:
                 print("That is not a valid command stupido")
